@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyntexWeather</title>
+</head>
+<body>
+   <div class="container">
+    <!-- cabecalho -->
+      <header>
+        <!-- logo -->
+        <div class="logo">
+          <span class="logo-icon">☀️</span>
+          <span>SyntexWeather</span>
+        </div>
+        <!-- navegacao -->
+        <nav>
+          <ul>
+            <li><a href="">Climas</a></li>
+          </ul>
+        </nav>
+      </header>
+   <!-- conteudo principal -->
+    <section class="hero">
+      <h1>O seu site de previsão de tempo!</h1>
+      <p>Acesso informações reais sobre o seu tempo!</p>
+      <!-- barra de pesquisa  -->
+      <div class="search-bar">
+        <input type="text" placeholder="Insira sua localização" id="search-input">
+        <button id="search-button">
+          Seach
+        </button>
+      </div>
+      <!-- Retorno de error caso api retorne -->
+      <div class="error-message" id="error-message"></div>
+    </section>
+    <!-- loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p class="description-loading">Carregando o clima da região pesquisada...</p>
+    </div>
+    <!-- cards -->
+    <section class="weather-section">
+      <h2>
+        Previsão de hoje!
+      </h2>
+      <div class="cards" id="weather-cards">
+
+      </div>
+    </section>
+  
+  </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
